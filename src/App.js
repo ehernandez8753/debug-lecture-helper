@@ -6,8 +6,8 @@ class App extends Component {
     super(props)
     this.state = {
       result: null,
-      firstNum: null,
-      secondNum: null
+      firstNum: "",
+      secondNum: ""
     }
   }
 
@@ -50,9 +50,10 @@ class App extends Component {
         <br /><br />
         <button onClick={() => this.calculate}>Calculate</button>
         {
+
           this.state.result ? (
             <p>Result is {this.state.result}</p>
-          ) : null
+          ) : (null)
         }
 
         <hr />
